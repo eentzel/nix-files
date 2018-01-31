@@ -57,9 +57,13 @@
   # services.printing.enable = true;
 
   # Enable the X11 windowing system.
-  # services.xserver.enable = true;
-  # services.xserver.layout = "us";
-  # services.xserver.xkbOptions = "eurosign:e";
+  services.xserver = {
+    enable = true;
+    layout = "us";
+    xkbOptions = "terminate:ctrl_alt_bksp, ctrl:nocaps";
+    windowManager.xmonad.enable = true;
+    windowManager.default = "xmonad";
+  };
 
   # Enable touchpad support.
   services.xserver.libinput.enable = true;
