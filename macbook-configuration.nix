@@ -28,7 +28,7 @@
   time.timeZone = "America/Denver";
 
   environment.variables = {
-    TERM = "vt100";
+    TERM = "screen-256color";
   };
   environment.systemPackages = with pkgs; [
     vim curl acpi
