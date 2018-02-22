@@ -73,6 +73,8 @@
   # services.xserver.displayManager.sddm.enable = true;
   # services.xserver.desktopManager.plasma5.enable = true;
 
+  virtualisation.docker.enable = true;
+
   security.sudo.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -82,6 +84,7 @@
     description = "Eric Entzel";
     extraGroups = [
       "wheel"
+      "docker"
     ];
     createHome = true;
     home = "/home/eric";
