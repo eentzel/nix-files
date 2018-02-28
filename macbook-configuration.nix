@@ -73,6 +73,10 @@
   # services.xserver.displayManager.sddm.enable = true;
   # services.xserver.desktopManager.plasma5.enable = true;
 
+  services.kubernetes = {
+    roles = ["master" "node"];
+  };
+
   virtualisation.docker.enable = true;
 
   security.sudo.enable = true;
